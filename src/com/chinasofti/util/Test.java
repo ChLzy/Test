@@ -1,18 +1,13 @@
 package com.chinasofti.util;
 
-import java.util.Scanner;
-
-import com.chinasofti.view.View;
+import com.chinasofti.control.Control;
+import com.chinasofti.domain.Customer;
 
 public class Test {
-
-	public static void main(String[] args) {
-		View v=new View();
-	//	int i=sc.nextInt();
-		
-		
-		
-		
+	@org.junit.Test
+	public void test(){
+		Control c=new Control();
+		c.addEmployee();
+	
 	}
-
 }

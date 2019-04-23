@@ -3,6 +3,10 @@ package com.chinasofti.domain;
 import java.io.Serializable;
 
 public class Customer implements Serializable{//顾客表
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int ctid;//顾客卡号
 	private String ctpassword;//顾客密码
 	private int cvip;//是否为会员
@@ -64,8 +68,7 @@ public class Customer implements Serializable{//顾客表
 
 	@Override
 	public String toString() {
-		return "Customer [ctid=" + ctid + ", ctpassword=" + ctpassword + ", cvip=" + cvip + ", balance=" + balance
-				+ ", frozen=" + frozen + ", ctname=" + ctname + "]";
+		return ctid+"\t"+ctpassword+"\t"+ctname+"\t"+balance+"\t"+cvip+"\t"+frozen;
 	}
 	
 }

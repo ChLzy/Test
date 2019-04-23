@@ -1,13 +1,10 @@
 package com.chinasofti.view;
 
-import com.chinasofti.util.UserInput;
 
 public class View {
-	private UserInput ui;
 	
 	public View() {
 		super();
-		this.ui = new UserInput();
 	}
 	//创建初始界面
 	public void uiView(){
@@ -45,7 +42,7 @@ public class View {
 		System.out.println("2、模糊查询");
 		System.out.println("3、查看购物车");
 		System.out.println("4、修改密码");
-		System.out.println("5、打印账单");
+		System.out.println("5、查看个人信息");
 		System.out.println("0、退出系统");
 		System.out.println("----------------------------");
 	}
@@ -65,6 +62,8 @@ public class View {
 		System.out.println("3、删除衣服信息");
 		System.out.println("4、添加员工");
 		System.out.println("5、删除员工");
+		System.out.println("6、查询所有员工");
+		System.out.println("7、查看所有衣服");
 		System.out.println("0、退出系统");
 		System.out.println("----------------------------");
 	}

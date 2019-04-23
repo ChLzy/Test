@@ -3,6 +3,10 @@ package com.chinasofti.domain;
 import java.io.Serializable;
 
 public class Clothes implements Serializable{//服装表
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int clid;//服装编号
 	private String clname;//服装名称
 	private double price;//服装价格

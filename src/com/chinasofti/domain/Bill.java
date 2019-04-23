@@ -1,9 +1,12 @@
 package com.chinasofti.domain;
 
 import java.io.Serializable;
-import java.sql.Date;
 
 public class Bill implements Serializable {// 账单
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int bid;// 账单编号
 	private int clid;// 衣服编号
 	private int bnum;// 服装总数
@@ -56,7 +59,7 @@ public class Bill implements Serializable {// 账单
 
 	@Override
 	public String toString() {
-		return bid + "\t" + clo + "\t" + bnum + "\t" + bsum;
+		return bid+"\t"+clo.getClid()+"\t"+clo.getClname()+"\t"+clo.getPrice()+"\t"+bnum+"\t"+bsum;
 	}
 
 }

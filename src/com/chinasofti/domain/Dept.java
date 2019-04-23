@@ -3,6 +3,10 @@ package com.chinasofti.domain;
 import java.io.Serializable;
 
 public class Dept implements Serializable{//部门表
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int deptno;//部门编号
 	private String dname;//部门名称
 	private String loc;//部门位置
@@ -30,7 +34,7 @@ public class Dept implements Serializable{//部门表
 	}
 	@Override
 	public String toString() {
-		return deptno+"\t"+loc;
+		return dname+"\t"+loc;
 	}
 	
 }
